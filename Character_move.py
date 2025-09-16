@@ -33,6 +33,12 @@ def move_left():
     pass
 
 
+def move_T_bottom():
+    print('Moving T bottom')
+    for x in range(90,710 , 5):
+        draw_boy(x, 100)
+    pass
+
 def move_rectangle():
     print("Moving rectangle")
     move_top()
@@ -60,6 +66,7 @@ def draw_boy(x: float, y: float):
 
 def move_triangle():
     print("Moving triangle")
+    move_T_bottom()
     pass
 
 
