@@ -35,9 +35,21 @@ def move_left():
 
 def move_T_bottom():
     print('Moving T bottom')
-    for x in range(90,710 , 5):
+    for x in range(90, 710, 5):
         draw_boy(x, 100)
     pass
+
+
+def move_T_righttop():
+    print('Moving T right top')
+    steps = 100
+    for i in range(steps + 1):
+        t = i / steps
+        x = 710+ (-310) * t
+        y = 100 + (400) * t
+        draw_boy(x, y)
+    pass
+
 
 def move_rectangle():
     print("Moving rectangle")
@@ -64,9 +76,12 @@ def draw_boy(x: float, y: float):
     delay(0.01)
 
 
+
 def move_triangle():
     print("Moving triangle")
     move_T_bottom()
+    move_T_righttop()
+    move_T_lefttop()
     pass
 
 
