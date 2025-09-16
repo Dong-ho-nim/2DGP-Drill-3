@@ -50,6 +50,15 @@ def move_T_righttop():
         draw_boy(x, y)
     pass
 
+def move_T_lefttop():
+    print('Moving T left top')
+    steps = 100
+    for i in range(steps + 1):
+        t = i / steps
+        x = 400 + (-310) * t
+        y = 500 + (-400) * t
+        draw_boy(x, y)
+    pass
 
 def move_rectangle():
     print("Moving rectangle")
