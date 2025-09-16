@@ -7,18 +7,21 @@ boy = load_image('character.png')
 
 def move_top():
     print('Moving top')
-    for x in range(0, 800, 5):
+    for x in range(0, 770, 5):
         draw_boy(x, 550)
     pass
 
 
 def move_right():
     print('Moving right')
+    for x in range(550, 0, -5):
+        draw_boy(770, x)
     pass
 
 
 def move_bottom():
     print('Moving bottom')
+
     pass
 
 
