@@ -14,20 +14,22 @@ def move_top():
 
 def move_right():
     print('Moving right')
-    for x in range(550, 0, -5):
-        draw_boy(770, x)
+    for y in range(550, 20, -5):
+        draw_boy(770, y)
     pass
 
 
 def move_bottom():
     print('Moving bottom')
-    for x in range(770, 0, -5):
+    for x in range(770, 20, -5):
         draw_boy(x, 50)
     pass
 
 
 def move_left():
     print('Moving left')
+    for y in range(0, 550, 5):
+        draw_boy(20, y)
     pass
 
 
